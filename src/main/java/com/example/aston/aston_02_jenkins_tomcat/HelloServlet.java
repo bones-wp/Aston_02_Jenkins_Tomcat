@@ -1,16 +1,16 @@
 package com.example.aston.aston_02_jenkins_tomcat;
 
-import java.io.*;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 
-import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
-
-@WebServlet(name = "helloServlet", value = "/hello-servlet")
 public class HelloServlet extends HttpServlet {
     private String message;
 
     public void init() {
-        message = "Hello World!!";
+        message = "Hello World!";
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
