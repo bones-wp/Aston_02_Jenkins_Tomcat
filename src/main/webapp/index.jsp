@@ -5,7 +5,7 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<h1><%= "Hello World!!!" %>
+<h1><%= "Добро пожаловать в консольный интернет магазин!" %>
 </h1>
 <br/>
 <a href="/Aston_02_Jenkins_Tomcat_war_exploded/TestServlet">Hello Servlet</a>
